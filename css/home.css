@@ -1,0 +1,47 @@
+.welcome{
+  height: 70vh;
+  background-image: url("../assets/desk.jpg");
+  background-position: center center;
+  background-size: cover;
+  border: solid 1px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.welcome .main_text{
+  display: block;
+  margin-top: 120px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: lightgrey;
+  padding: 0 30px;
+  font-size: 28px;
+}
+
+.welcome .main_text .secondary_text{
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.partners a{
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.partners a img{
+  border: solid 1px white;
+}
+
+.partners a:hover{
+  opacity: 1;
+  transition: transform .2s;
+}
+
+.partners a img:hover{
+  transform: scale(1.025);
+  transition: transform .2s;
+}

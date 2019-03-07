@@ -1,0 +1,32 @@
+/*
+#EAE7DC - egshell white
+#D8C3A5 - dark vanilla
+#8E8D8A - grey
+#E98074 - light red
+#E85A4F - dark red
+*/
+
+body{
+  background-color: #D8C3A5;
+  font-family: 'Roboto', sans-serif;
+  color: #8E8D8A;
+  margin: 0;
+}
+
+.main_container{
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+h1, h2, h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #E85A4F;
+}
+
+
+.pull-right{
+  float: right;
+}

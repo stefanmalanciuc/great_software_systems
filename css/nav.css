@@ -1,0 +1,26 @@
+nav{
+  text-align: center;
+  display: block;
+  border-bottom: solid 1px #D8C3A5;
+  padding-bottom: 10px;
+}
+
+nav a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: #8E8D8A;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px 20px;
+  padding: 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+nav a:hover{
+  background-color: #E98074;
+  color: white;
+  transition: .2s linear;
+}

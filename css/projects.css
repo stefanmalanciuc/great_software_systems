@@ -1,0 +1,41 @@
+.product_cards_container{
+  text-align: center;
+}
+
+.product_card{
+  display: inline-block;
+  word-wrap: break-word;
+  width: 30%;
+  border: solid 1px lightgrey;
+  margin: 10px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  opacity: .7;
+  overflow: hidden;
+}
+
+.product_card .title{
+  min-height: 60px;
+  padding-top: 10px;
+  font-size: 20px;
+  margin: 0px 28px;
+  word-break: break-word;
+  display: inline-flex;
+  text-align: left;
+}
+
+.product_card .image{
+  min-height: 90px;
+}
+
+.product_card .image img{
+  width: 256px;
+  height: 256px;
+}
+
+.product_card:hover{
+  transform: scale(1.025);
+  transition: transform .2s;
+  opacity: 1;
+}

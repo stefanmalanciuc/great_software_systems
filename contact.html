@@ -1,25 +1,86 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Let us know about your ideas or thoughts">
-    <meta name="author" content="Manu">
-    <title>GreatCodeSystem</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Let us know about your ideas or thoughts">
+  <meta name="author" content="Manu">
+  <title>GreatCodeSystem</title>
+
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+  <div class="main_container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
     <h1>We would love to hear from you</h1>
 
-    <div class="contact_form">
-      <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-      </p>
+    <section class="contact_form default_form">
       <form class="" action="" method="post">
-        <input type="text" name="user_name" placeholder="Name">
+        <input type="text" name="user_name" placeholder="Your name">
         <input type="text" name="user_email" placeholder="Email">
-        <input type="text" name="user_phone" placeholder="Phone number">
-        <textarea name="user_message" placeholder="Let us know how we can help you!"></textarea>
-        <input type="submit" name="" value="Send">
+        <input type="text" name="user_phone" placeholder="Phone">
+        <textarea name="message" placeholder="Message"></textarea>
+
+        <div class="actions">
+          <input type="checkbox" name="gdpr_check" value="">
+          <label for="gdpr_check">I gree to GDPR stuff</label>
+          <input class="pull-right" type="submit" name="" value="Send">
+        </div>
       </form>
+    </section>
+  </div>
+  <footer>
+    <div class="contact_details">
+      <p>Come by to have a chat. Coffee is on us! <i class="fa fa-coffee"></i></p>
+      <p>
+        +22 (012) 345 678 93
+      </p>
+
+      <br>
+      <p>
+        HappyVille, Happy street
+      </p>
+      <p>
+        Number 123, first entrance
+      </p>
+      <a href="#"><b>VIEW ON MAP</b></a>
+      <br><br>
     </div>
-  </body>
+    <div class="social_menu">
+      <a href="#">
+        <i class="fa fa-envelope"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <div class="copyright">
+      © Manu
+    </div>
+    <div class="up">
+      <i class="fa fa-angle-up up_icon"></i>
+    </div>
+  </footer>
+</body>
 </html>
