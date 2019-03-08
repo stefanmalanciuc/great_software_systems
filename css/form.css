@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.default_form input[type=text], textarea, .default_form .actions{
+.default_form input[type=text], .default_form .actions{
   width: 500px;
 }
 
@@ -16,10 +16,9 @@
   margin: 0 auto;
 }
 
-.default_form input[type=text], textarea {
+.default_form input[type=text]{
   display: block;
   padding: 10px;
-  border: solid 1px lightgrey;
   margin: 10px auto;
 }
 
@@ -31,10 +30,6 @@
   color: #8E8D8A;
   padding: 10px 15px;
   display: inline-block;
-}
-
-.default_form textarea{
-  min-height: 100px;
 }
 
 .default_form input[type=submit]{

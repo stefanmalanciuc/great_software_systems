@@ -6,29 +6,40 @@
   <meta name="author" content="Manu">
   <title>GreatCodeSystem</title>
 
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/footer.css">
-  <link rel="stylesheet" type="text/css" href="css/nav.css">
-  <link rel="stylesheet" type="text/css" href="css/home.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
   <section class="welcome">
-    <div class="main_text">
-      GreatSoftwareSystem
-      <div class="secondary_text">
-        Building the future since 2018
+    <div class="container">
+      <div class="main_text">
+        GreatSoftwareSystem
+        <div class="secondary_text">
+          Building the future since 2018
+        </div>
       </div>
     </div>
   </section>
-  <div class="main_container">
+  <div class="container">
     <nav>
-      <a href="index.html">Home</a>
+      <a class="active_nav_item" href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <h1>Welcome to Great Code Sys</h1>
+  </div>
+  <div class="container main_container">
+    <h1>Welcome</h1>
     <p>Libero volutpat sed cras ornare. Sit amet commodo nulla facilisi nullam vehicula. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. </p>
     <p>Duis at tellus at urna condimentum mattis pellentesque.
       vitae elementum curabitur vitae nunc. Quis auctor elit sed vulputate. Convallis posuere morbi leo urna molestie. Feugiat nibh sed pulvinar proin gravida hendreri</p>
@@ -41,63 +52,66 @@
       <div class="partners">
         <h2>Partners</h2>
         <p>Here are some companies we are proud to work with. Each partnership means respect, we are grateful to be able to develop software with the big players of the software development industry.</p>
-        <a href="http://www.apple.com" target="_blank">
-          <img src="assets/apple.jpg" alt="Apple">
-        </a>
-        <a href="http://www.ibm.com" target="_blank">
-          <img src="assets/ibm.jpg" alt="IBM">
-        </a>
-        <a href="https://sdacademy.ro" target="_blank">
-          <img src="assets/sda.jpg" alt="SDA">
-        </a>
-        <a href="https://tesla.com" target="_blank">
-          <img src="assets/tesla.webp" alt="Tesla">
-        </a>
+        <div class="row">
+          <a class="col l4 m6 s6" href="http://www.apple.com" target="_blank">
+            <img src="assets/apple.jpg" alt="Apple">
+          </a>
+          <a class="col l4 m6 s6" href="http://www.ibm.com" target="_blank">
+            <img src="assets/ibm.jpg" alt="IBM">
+          </a>
+          <a class="col l4 m6 s6" href="https://sdacademy.ro" target="_blank">
+            <img src="assets/sda.jpg" alt="SDA">
+          </a>
+        </div>
+        <div class="row">
+          <a class="col l4 m6 s6" href="https://tesla.com" target="_blank">
+            <img src="assets/tesla.webp" alt="Tesla">
+          </a>
+        </div>
       </div>
     </div>
-    <footer>
-      <div class="contact_details">
-        <p>Come by to have a chat. Coffee is on us! <i class="fa fa-coffee"></i></p>
-        <p>
-          +22 (012) 345 678 93
-        </p>
-
-        <br>
-        <p>
-          HappyVille, Happy street
-        </p>
-        <p>
-          Number 123, first entrance
-        </p>
-        <a href="#"><b>VIEW ON MAP</b></a>
-        <br><br>
-      </div>
-      <div class="social_menu">
-        <a href="#">
-          <i class="fa fa-envelope"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-      <div class="copyright">
-        © Manu
-      </div>
-      <div class="up">
-        <i class="fa fa-angle-up up_icon"></i>
-      </div>
-    </footer>
+    <div class="container">
+      <footer class="page-footer">
+        <div class="row content">
+          <div class="col l6 s12">
+            <p>Come by to have a chat. Coffee is on us! <i class="fa fa-coffee"></i></p>
+              +22 (012) 345 678 93
+            </p>
+            <p>
+              HappyVille, Happy street, Number 123, first entrance <br>
+              <a href="#"><b>VIEW ON MAP</b></a>
+            </p>
+          </div>
+          <div class="col l6 s12">
+            <div class="social_menu">
+              <a href="#">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          © 2014 Copyright Emanuel Stefan
+          <a class="grey-text text-lighten-4 up right" href="#!">
+            <i class="fa fa-angle-up up_icon"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
   </html>

@@ -1,12 +1,12 @@
 .welcome{
-  height: 70vh;
+  height: 100vh;
   background-image: url("../assets/desk.jpg");
   background-position: center center;
   background-size: cover;
   border: solid 1px;
-  width: 80%;
   margin: 0 auto;
   padding: 10px 20px;
+  margin-bottom: -70px;
 }
 
 .welcome .main_text{
@@ -15,7 +15,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   color: lightgrey;
-  padding: 0 30px;
+  padding: 0 10px;
   font-size: 28px;
 }
 
@@ -34,6 +34,7 @@
 
 .partners a img{
   border: solid 1px white;
+  width: 100%;
 }
 
 .partners a:hover{

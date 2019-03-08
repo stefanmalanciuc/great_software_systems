@@ -6,77 +6,86 @@
   <meta name="author" content="Manu">
   <title>GreatCodeSystem</title>
 
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/footer.css">
-  <link rel="stylesheet" type="text/css" href="css/projects.css">
-  <link rel="stylesheet" type="text/css" href="css/form.css">
-  <link rel="stylesheet" type="text/css" href="css/nav.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/projects.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
-  <div class="main_container">
+  <div class="container">
     <nav>
       <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
+      <a class="active_nav_item" href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
-
+  </div>
+  <div class="container main_container">
     <h1>Our work</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
 
     <section class="product_cards_container">
-      <div class="product_card">
-        <div class="image">
-          <img src="assets/tesla.webp" alt="Tesla Project">
+      <div class="row">
+        <div class="product_card col l4 m6 s6">
+          <div class="image">
+            <img src="assets/tesla.webp" alt="Tesla Project">
+          </div>
+          <div class="title">
+            Tesla presentation website
+          </div>
         </div>
-        <div class="title">
-          Tesla presentation website
+
+        <div class="product_card col l4 m6 s6">
+          <div class="image">
+            <img src="assets/microsoft.jpeg" alt="Microsoft Project">
+          </div>
+          <div class="title">
+            Web interface for Microsoft's Skype
+          </div>
+        </div>
+
+        <div class="product_card col l4 m6 s6">
+          <div class="image">
+            <img src="assets/sda.jpg" alt="Software development academy">
+          </div>
+          <div class="title">
+            SDA classes scheduler
+          </div>
         </div>
       </div>
 
-      <div class="product_card">
-        <div class="image">
-          <img src="assets/microsoft.jpeg" alt="Microsoft Project">
+      <div class="row">
+        <div class="product_card col l4 m6 s6">
+          <div class="image">
+            <img src="assets/dog.jpg" alt="Dog shelter">
+          </div>
+          <div class="title">
+            Take me home! Dog shelter scheduler
+          </div>
         </div>
-        <div class="title">
-          Web interface for Microsoft's Skype
-        </div>
-      </div>
 
-      <div class="product_card">
-        <div class="image">
-          <img src="assets/sda.jpg" alt="Software development academy">
+        <div class="product_card col l4 m6 s6">
+          <div class="image">
+            <img src="assets/herbal.jpeg" alt="Herbal">
+          </div>
+          <div class="title">
+            Homemade herbal tea
+          </div>
         </div>
-        <div class="title">
-          SDA classes scheduler
-        </div>
-      </div>
 
-      <div class="product_card">
-        <div class="image">
-          <img src="assets/dog.jpg" alt="Dog shelter">
-        </div>
-        <div class="title">
-          Take me home! Dog shelter scheduler
-        </div>
-      </div>
-
-      <div class="product_card">
-        <div class="image">
-          <img src="assets/herbal.jpeg" alt="Herbal">
-        </div>
-        <div class="title">
-          Homemade herbal tea
-        </div>
-      </div>
-
-      <div class="product_card">
-        <div class="image">
-          <img src="assets/idea.png" alt="Have an idea?">
-        </div>
-        <div class="title">
-          Have an idea? Let's talk!
+        <div class="product_card col l4 m6 s6">
+          <div class="image">
+            <img src="assets/idea.png" alt="Have an idea?">
+          </div>
+          <div class="title">
+            Have an idea? Let's talk!
+          </div>
         </div>
       </div>
     </section>
@@ -88,60 +97,74 @@
       <form class="" action="" method="post">
         <input type="text" name="user_name" placeholder="Your name *">
         <input type="text" name="user_email" placeholder="Your email *">
-        <input type="text" name="user_phone" placeholder="Your phone">
-        <textarea name="message" placeholder="Tell us about your idea *"></textarea>
+
+        <div class="row">
+          <div class="input-field col s12 l6">
+            <input id="user_phone" type="text" name="user_phone">
+            <label for="user_phone">Your phone</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12 l6">
+            <textarea class="materialize-textarea" id="form_message"></textarea>
+            <label for="form_message">Tell us about your idea *</label>
+          </div>
+        </div>
 
         <div class="actions">
-          <input type="checkbox" name="gdpr_check" value="">
-          <label for="gdpr_check">I gree to GDPR stuff</label>
+          <label>
+            <input type="checkbox" name="gdpr_check" />
+            <span>I gree to GDPR stuff</span>
+          </label>
+
           <input class="pull-right" type="submit" name="" value="Send">
         </div>
       </form>
     </section>
   </div>
-  <footer>
-    <div class="contact_details">
-      <p>Come by to have a chat. Coffee is on us! <i class="fa fa-coffee"></i></p>
-      <p>
-        +22 (012) 345 678 93
-      </p>
-
-      <br>
-      <p>
-        HappyVille, Happy street
-      </p>
-      <p>
-        Number 123, first entrance
-      </p>
-      <a href="#"><b>VIEW ON MAP</b></a>
-      <br><br>
-    </div>
-    <div class="social_menu">
-      <a href="#">
-        <i class="fa fa-envelope"></i>
-      </a>
-      <a href="#">
-        <i class="fab fa-facebook"></i>
-      </a>
-      <a href="#">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="#">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="#">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="#">
-        <i class="fab fa-linkedin"></i>
-      </a>
+  <div class="container">
+    <footer class="page-footer">
+      <div class="row content">
+        <div class="col l6 s12">
+          <p>Come by to have a chat. Coffee is on us! <i class="fa fa-coffee"></i></p>
+          +22 (012) 345 678 93
+        </p>
+        <p>
+          HappyVille, Happy street, Number 123, first entrance
+          <a href="#"><b>VIEW ON MAP</b></a>
+        </p>
+      </div>
+      <div class="col l6 s12">
+        <div class="social_menu">
+          <a href="#">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
     </div>
     <div class="copyright">
-      © Manu
-    </div>
-    <div class="up">
-      <i class="fa fa-angle-up up_icon"></i>
+      © 2014 Copyright Emanuel Stefan
+      <a class="grey-text text-lighten-4 up right" href="#!">
+        <i class="fa fa-angle-up up_icon"></i>
+      </a>
     </div>
   </footer>
+</div>
 </body>
 </html>
