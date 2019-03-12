@@ -1,3 +1,8 @@
 nav{
-  background-color: #8E8D8A;
+  background-color: white;
+  border-bottom: solid 1px lightgrey;
+}
+
+nav a{
+  color: #8E8D8A;
 }

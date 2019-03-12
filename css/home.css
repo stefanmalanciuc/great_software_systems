@@ -7,6 +7,15 @@
   margin: 0 auto;
   padding: 10px 20px;
   margin-bottom: -70px;
+  -webkit-animation: mover .5s ease-in-out forwards;
+  -moz-animation: mover .5s ease-in-out forwards;
+  -o-animation: mover .5s ease-in-out forwards;
+  animation: mover .5s ease-in-out forwards;
+}
+
+@keyframes mover {
+  0% { margin-bottom: -70px; }
+  100% { margin-bottom: -300px; }
 }
 
 .welcome .main_text{

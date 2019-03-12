@@ -33,3 +33,16 @@ h1, h2, h3{
 .active_nav_item{
   border-bottom: solid 2px #E85A4F;
 }
+
+.center_horizontal{
+  margin: 0 auto!important;
+  float: none!important;
+}
+
+.not_displayed{
+  display: none;
+}
+
+.error{
+  border-bottom: solid 2px #E85A4F!important;
+}
