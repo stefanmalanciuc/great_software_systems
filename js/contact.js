@@ -1,32 +1,24 @@
+var validFields = true;
+var gdpr_checkbox = document.querySelector("input[name=gdpr_check]");
+
 function validateForm() {
   var name_input = document.getElementById("user_name");
   var email_input = document.getElementById("user_email");
   var form_message_input = document.getElementById("form_message");
 
-  var validFields = true;
+  validateField(name_input);
+  validateField(email_input);
+  validateField(form_message_input);
+}
 
-  if (!name_input.value) {
-    name_input.classList.add('error');
+function validateField(field) {
+  if (!field.value) {
+    field.classList.add('error');
     validFields = false;
   } else {
-    name_input.classList.remove('error');
+    field.classList.remove('error');
+    validFields = true;
   }
-
-  if (!email_input.value) {
-    email_input.classList.add('error');
-    validFields = false;
-  } else {
-    email_input.classList.remove('error');
-  }
-
-  if (!form_message_input.value) {
-    form_message_input.classList.add('error');
-    validFields = false;
-  } else {
-    form_message_input.classList.remove('error');
-  }
-
-  return validFields;
 }
 
 var form = document.getElementById("contact_form");
@@ -34,13 +26,23 @@ var form = document.getElementById("contact_form");
 form.addEventListener('submit', event => {
   event.preventDefault();
 
-  var validForm = validateForm();
+  validateForm();
 
-  if (validForm) {
+  if (validFields) {
     var elem = document.querySelectorAll('.modal');
     openModal();
   }
 });
+
+
+gdpr_checkbox.addEventListener( 'change', function() {
+  if(this.checked) {
+    document.querySelector(".submit_form").disabled=false;
+  } else {
+    document.querySelector(".submit_form").disabled=true;
+  }
+});
+
 
 function openModal() {
   const elem = document.getElementById('modal1');

@@ -46,3 +46,7 @@ h1, h2, h3{
 .error{
   border-bottom: solid 2px #E85A4F!important;
 }
+
+input[disabled]{
+  opacity: .3;
+}
