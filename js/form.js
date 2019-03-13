@@ -34,12 +34,11 @@ form.addEventListener('submit', event => {
   }
 });
 
-
 gdpr_checkbox.addEventListener( 'change', function() {
   if(this.checked) {
-    document.querySelector(".submit_form").disabled=false;
+    document.querySelector(".submit_form_input").disabled=false;
   } else {
-    document.querySelector(".submit_form").disabled=true;
+    document.querySelector(".submit_form_input").disabled=true;
   }
 });
 
