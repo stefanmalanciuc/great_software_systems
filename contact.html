@@ -27,19 +27,44 @@
     </nav>
   </div>
 
-  <div class="container main_container">
+  <div id="main" class="container main_container">
     <h1>We would love to hear from you</h1>
-    <section class="contact_form default_form">
-      <form class="" action="" method="post">
-        <input type="text" name="user_name" placeholder="Your name">
-        <input type="text" name="user_email" placeholder="Email">
-        <input type="text" name="user_phone" placeholder="Phone">
-        <textarea name="message" placeholder="Message"></textarea>
+    <section class="default_form contact_form">
+      <p>
+        We would like to hear about your idea. Each detail is useful, but some fields below are mandatory :).
+      </p>
+      <form id="contact_form" class="col s4 m4 l4" action="" method="">
+        <div class="row">
+          <div class="col l7 m9 s12 center_horizontal">
+            <div class="input-field">
+              <input id="user_name" type="text" name="user_name">
+              <label for="user_name">Your Name *</label>
+            </div>
 
-        <div class="actions">
-          <input type="checkbox" name="gdpr_check" value="">
-          <label for="gdpr_check">I gree to GDPR stuff</label>
-          <input class="pull-right" type="submit" name="" value="Send">
+            <div class="input-field">
+              <input id="user_email" type="text" name="user_email">
+              <label for="user_email">Your Email *</label>
+            </div>
+
+            <div class="input-field">
+              <input id="user_phone" type="text" name="user_phone">
+              <label for="user_phone">Your phone</label>
+            </div>
+
+            <div class="input-field">
+              <textarea class="materialize-textarea" id="form_message"></textarea>
+              <label for="form_message">Tell us about your idea *</label>
+            </div>
+
+            <div class="actions">
+              <label>
+                <input type="checkbox" name="gdpr_check" />
+                <span>I gree to GDPR stuff</span>
+              </label>
+
+              <input class="pull-right submit_form_input" type="submit" value="Send" disabled>
+            </div>
+          </div>
         </div>
       </form>
     </section>
@@ -81,11 +106,22 @@
       </div>
       <div class="copyright">
         © 2014 Copyright Emanuel Stefan
-        <a class="grey-text text-lighten-4 up right" href="#!">
+        <a class="grey-text text-lighten-4 up right" href="#main">
           <i class="fa fa-angle-up up_icon"></i>
         </a>
       </div>
     </footer>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Thank you!</h4>
+      <p>Thanks a lot for your message. We will get back to you.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="submitForm();">OK</a>
+    </div>
   </div>
 </body>
 </html>

@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
@@ -16,7 +17,7 @@
   <link rel="stylesheet" type="text/css" href="css/nav.css">
   <link rel="stylesheet" type="text/css" href="css/projects.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
 </head>
 <body>
   <div class="container">
@@ -26,100 +27,131 @@
       <a href="contact.html">Contact</a>
     </nav>
   </div>
-  <div class="container main_container">
+  <div id="main" class="container main_container">
     <h1>Our work</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
 
-    <section class="product_cards_container">
-      <div class="row">
-        <div class="product_card col l4 m6 s6">
-          <div class="image">
-            <img src="assets/tesla.webp" alt="Tesla Project">
+    <section class="product_cards_container row">
+      <div class="col s12 m12 l12">
+        <div class="card col l5 m6 s12 offset-l1 item">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/tesla.webp">
           </div>
-          <div class="title">
-            Tesla presentation website
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Tesla presentation website<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">More details</a></p>
           </div>
-        </div>
-
-        <div class="product_card col l4 m6 s6">
-          <div class="image">
-            <img src="assets/microsoft.jpeg" alt="Microsoft Project">
-          </div>
-          <div class="title">
-            Web interface for Microsoft's Skype
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Tesla presentation website<i class="material-icons right">close</i></span>
+            <p>Enim blandit volutpat maecenas volutpat blandit. Donec ac odio tempor orci dapibus ultrices. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed</p>
+            <p>Donec massa sapien faucibus et molestie ac feugiat sed. Nulla malesuada pellentesque elit eget gravida cum sociis. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo</p>
           </div>
         </div>
-
-        <div class="product_card col l4 m6 s6">
-          <div class="image">
-            <img src="assets/sda.jpg" alt="Software development academy">
+        <div class="card col l5 m6 s12 item">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/microsoft.jpeg">
           </div>
-          <div class="title">
-            SDA classes scheduler
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Web interface for Microsoft's Skype<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">More details</a></p>
           </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="product_card col l4 m6 s6">
-          <div class="image">
-            <img src="assets/dog.jpg" alt="Dog shelter">
-          </div>
-          <div class="title">
-            Take me home! Dog shelter scheduler
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Web interface for Microsoft's Skype<i class="material-icons right">close</i></span>
+            <p>Enim blandit volutpat maecenas volutpat blandit. Donec ac odio tempor orci dapibus ultrices. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed</p>
+            <p>Donec massa sapien faucibus et molestie ac feugiat sed. Nulla malesuada pellentesque elit eget gravida cum sociis. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo</p>
+            <p>Mi eget mauris pharetra et ultrices neque ornare aenean. Nisi lacus sed viverra tellus in hac habitasse.</p>
           </div>
         </div>
-
-        <div class="product_card col l4 m6 s6">
-          <div class="image">
-            <img src="assets/herbal.jpeg" alt="Herbal">
+        <div class="card col l5 m6 s12 offset-l1 item">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/sda.jpg">
           </div>
-          <div class="title">
-            Homemade herbal tea
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">SDA classes scheduler<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">More details</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">SDA classes scheduler<i class="material-icons right">close</i></span>
+            <p>Enim blandit volutpat maecenas volutpat blandit. Donec ac odio tempor orci dapibus ultrices. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed</p>
+            <p>Donec massa sapien faucibus et molestie ac feugiat sed. Nulla malesuada pellentesque elit eget gravida cum sociis. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo</p>
+            <p>Mi eget mauris pharetra et ultrices neque ornare aenean. Nisi lacus sed viverra tellus in hac habitasse.</p>
           </div>
         </div>
-
-        <div class="product_card col l4 m6 s6">
-          <div class="image">
-            <img src="assets/idea.png" alt="Have an idea?">
+        <div class="card col l5 m6 s12 item">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/dog.jpg">
           </div>
-          <div class="title">
-            Have an idea? Let's talk!
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Take me home! Dog shelter scheduler<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">More details</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Take me home! Dog shelter scheduler<i class="material-icons right">close</i></span>
+            <p>Enim blandit volutpat maecenas volutpat blandit. Donec ac odio tempor orci dapibus ultrices. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed</p>
+            <p>Donec massa sapien faucibus et molestie ac feugiat sed. Nulla malesuada pellentesque elit eget gravida cum sociis. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo</p>
+            <p>Mi eget mauris pharetra et ultrices neque ornare aenean. Nisi lacus sed viverra tellus in hac habitasse.</p>
+          </div>
+        </div>
+        <div class="card col l5 m6 s12 offset-l1 item">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/herbal.jpeg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Homemade herbal tea online store<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">More details</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Homemade herbal tea online store<i class="material-icons right">close</i></span>
+            <p>Enim blandit volutpat maecenas volutpat blandit. Donec ac odio tempor orci dapibus ultrices. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed</p>
+            <p>Donec massa sapien faucibus et molestie ac feugiat sed. Nulla malesuada pellentesque elit eget gravida cum sociis. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo</p>
+            <p>Mi eget mauris pharetra et ultrices neque ornare aenean. Nisi lacus sed viverra tellus in hac habitasse.</p>
+          </div>
+        </div>
+        <div class="card col l5 m6 s12 item">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/idea.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Have an idea? Let's talk!
           </div>
         </div>
       </div>
     </section>
 
-    <section class="default_form">
-      <p>
-        We would like to hear about your idea. Each detail is useful, but some fields below are mandatory :).
-      </p>
-      <form class="" action="" method="post">
-        <input type="text" name="user_name" placeholder="Your name *">
-        <input type="text" name="user_email" placeholder="Your email *">
-
+    <section class="default_form project_form not_displayed">
+      <form id="contact_form" class="col s4 m4 l4" action="" method="">
         <div class="row">
-          <div class="input-field col s12 l6">
-            <input id="user_phone" type="text" name="user_phone">
-            <label for="user_phone">Your phone</label>
+          <div class="col l7 m9 s12 center_horizontal">
+            <div class="input-field">
+              <input id="user_name" type="text" name="user_name">
+              <label for="user_name">Your Name *</label>
+            </div>
+            <div class="input-field">
+              <input id="user_email" type="text" name="user_email">
+              <label for="user_email">Your Email *</label>
+            </div>
+
+            <div class="input-field">
+              <input id="user_phone" type="text" name="user_phone">
+              <label for="user_phone">Your phone</label>
+            </div>
+
+            <div class="input-field">
+              <textarea class="materialize-textarea" id="form_message"></textarea>
+              <label for="form_message">Tell us about your idea *</label>
+            </div>
+
+            <div class="actions">
+              <label>
+                <input type="checkbox" name="gdpr_check" />
+                <span>I gree to GDPR stuff</span>
+              </label>
+
+              <input class="pull-right submit_form_input" type="submit" value="Send" disabled>
+            </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="input-field col s12 l6">
-            <textarea class="materialize-textarea" id="form_message"></textarea>
-            <label for="form_message">Tell us about your idea *</label>
-          </div>
-        </div>
-
-        <div class="actions">
-          <label>
-            <input type="checkbox" name="gdpr_check" />
-            <span>I gree to GDPR stuff</span>
-          </label>
-
-          <input class="pull-right" type="submit" name="" value="Send">
-        </div>
       </form>
     </section>
   </div>
@@ -160,11 +192,24 @@
     </div>
     <div class="copyright">
       © 2014 Copyright Emanuel Stefan
-      <a class="grey-text text-lighten-4 up right" href="#!">
+      <a class="grey-text text-lighten-4 up right" href="#main">
         <i class="fa fa-angle-up up_icon"></i>
       </a>
     </div>
   </footer>
 </div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Thank you!</h4>
+    <p>Thanks a lot for your message. We will get back to you.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="submitForm();">OK</a>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
