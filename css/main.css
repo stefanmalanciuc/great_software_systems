@@ -1,0 +1,48 @@
+/*
+#EAE7DC - egshell white
+#D8C3A5 - dark vanilla
+#8E8D8A - grey
+#E98074 - light red
+#E85A4F - dark red
+*/
+.main_container{
+    width:80%;
+    border: solid;
+    margin: auto;
+    padding: 20px 10px;
+    background-color:#EAE7DC;
+}
+body{
+background-color: #D8C3A5;
+}
+body p {
+color:#8E8D8A;
+}
+
+h1,h2,h3{
+color: #E85A4F;font-family: 'Ranga', cursive;
+font-weight: 200;
+}
+
+body nav{
+text-align: center;
+border-button: solid 3px black;
+background-color:#E98074;
+weight: 80%;
+margin: 0 auto;
+padding:5px 10px;
+}
+
+body nav a{
+margin: 0 10px;
+text-transform: uppercase;
+text_decoration: nome;
+}
+.page-footer{
+background-color:#D8C3A5;
+}
+.page-footer.social{
+list-style: nome;
+text-align: right;
+}
+
